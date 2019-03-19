@@ -19,7 +19,7 @@ CKEDITOR.editorConfig = function( config ) {
 	//config.forceEnterMode = true;
 	config.allowedContent = true;
 	config.removeFormatAttributes = '';
-	config.extraPlugins = 'lightbox,font,sharedspace,sourcedialog,glyphicons,fontawesome,texttransform,ckeditor-gwf-plugin,lineheight,fontweight,text-shadow';
+	config.extraPlugins = 'font,sharedspace,sourcedialog,fontawesome,texttransform,ckeditor-gwf-plugin,lineheight,fontweight,text-shadow';
 
 	//config.skin = 'icy_orange';
 	/* config.sharedSpaces = {

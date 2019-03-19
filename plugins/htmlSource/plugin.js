@@ -3,7 +3,7 @@ plugInName = 'htmlSource';
 var ac;
 var style_html = DIP.new(DIP.require('/js/main/style_html.js'));
 CKEDITOR.plugins.add(plugInName,
-{  
+{
   init: function (editor) {
 
     editor.addCommand('htmlDialog', new CKEDITOR.dialogCommand('htmlDialog'));
@@ -16,7 +16,7 @@ CKEDITOR.plugins.add(plugInName,
     CKEDITOR.dialog.add('htmlDialog', function (editor) {
         return {
             title: 'Fuente Html',
-            
+
             minWidth: 600,
             minHeight: 400,
             contents: [
@@ -32,7 +32,7 @@ CKEDITOR.plugins.add(plugInName,
                                 rows: 25,
                                 onShow: function () {
                                     var value = editor.getData();
-                                    
+
                                     $('#ac-html').remove();
                                     $('#'+this.domId+' textarea').css('display','none');
                                     $('#'+this.domId).parents('.cke_reset_all').removeClass('cke_reset_all');
@@ -44,10 +44,10 @@ CKEDITOR.plugins.add(plugInName,
                                         enableBasicAutocompletion: true,
                                         enableSnippets: true,
                                         enableLiveAutocompletion: true,
-            
-                                        
+
+
                                     });
-                                   
+
                                     editorHtml.setTheme("ace/theme/monokai");
                                     editorHtml.getSession().setMode("ace/mode/html");
                                     editorHtml.setValue(style_html.beautify_html(value));

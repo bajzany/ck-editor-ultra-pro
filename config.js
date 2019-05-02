@@ -19,16 +19,16 @@ CKEDITOR.editorConfig = function( config ) {
 	//config.forceEnterMode = true;
 	config.allowedContent = true;
 	config.removeFormatAttributes = '';
-	config.extraPlugins = 'font,sharedspace,sourcedialog,fontawesome,texttransform,ckeditor-gwf-plugin,lineheight,fontweight,text-shadow';
+	config.extraPlugins = 'font,sharedspace,sourcedialog,fontawesome,texttransform,lineheight,fontweight,text-shadow';
 
 	//config.skin = 'icy_orange';
 	/* config.sharedSpaces = {
 		 top: 'ckeoptions'
 	 };
 	 */
-	config.sharedSpaces = {
-		top: 'ckeoptions',
-	};
+// 	config.sharedSpaces = {
+// 		top: 'ckeoptions',
+// 	};
 
 	$('div').filter(function() {
 		return this.className == 'panel current';
